@@ -1,0 +1,106 @@
+.hidden-menu {
+  position: fixed;
+  width: 100%;
+  background-color: $white;
+  min-height: 568px;
+  top: 0;
+  left: 0;
+  line-height: 22px;
+  font-weight: 700;
+  overflow-y: scroll;
+  z-index: 100;
+
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 27px;
+    margin-bottom: 67px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: inherit;
+    transition: all 0.2s ease;
+  }
+
+  &__interaction {
+    display: none;
+  }
+
+  &__nav {
+    margin-bottom: 53px;
+  }
+
+  &__auth {
+    width: 100%;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 30px;
+    background-color: $primaryYellow;
+    cursor: pointer;
+  }
+
+  &__contacts .contacts {
+    margin-bottom: 40px;
+  }
+
+  &__social {
+    margin-bottom: 40px;
+  }
+}
+
+//------tablet-version-----
+
+@media (min-width:  $tablet-width) {
+  .hidden-menu {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &__header {
+      margin-bottom: 86px;
+      overflow: hidden;
+    }
+    &__interaction {
+     display: flex;
+    }
+
+    &__logo{
+      width: 166px;
+      height: 42px;
+    }
+
+    &__btn {
+      fill: #cccccc;
+    }
+
+    &__nav {
+      margin-bottom: 140px;
+    }
+
+    &__auth {
+      display: none;
+    }
+
+    &__contacts {
+      margin-left: 55px;
+      margin-bottom: 130px;
+    }
+
+    &__social {
+      margin-bottom: 80px;
+      margin-left: 55px;
+    }
+
+    &__social .social{
+      justify-content: flex-start;
+    }
+  }
+}

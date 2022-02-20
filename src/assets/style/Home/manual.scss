@@ -1,0 +1,157 @@
+.manual {
+  background-color: $primaryDarkblue;
+  position: relative;
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: $secondaryDarkblue;
+    z-index: 5;
+  }
+
+  &__item:not(:last-child) {
+    min-height: 90px;
+    border-radius: $borderRadiusTop;
+    padding-bottom: 10px;
+  }
+
+  &__item:last-child {
+    min-height: 80px;
+    border-radius: 10px;
+  }
+
+  &__text {
+    width: 180px;
+    display: block;
+    padding-left: 25px;
+  }
+
+  &__number {
+    align-self: flex-start;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-top: 20px;
+    color: $white;
+  }
+}
+
+.manual:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 82px;
+  background-color: #161c36;
+}
+
+//------tablet-version------
+
+@media (min-width: $tablet-width) {
+  .manual {
+    background: transparent;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 50%;
+      padding-left: 30px;
+      padding-top: 30px;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 700;
+    }
+
+    &__item:nth-child(2n) {
+      margin-left: -30px;
+    }
+
+    &__item:nth-child(2n + 1) {
+      width: 54%;
+    }
+
+    &__item:nth-child(1),
+    &__item:nth-child(2) {
+      border-radius: $borderRadiusTopDesk;
+      padding-bottom: 35px;
+
+    }
+
+    &__item:nth-child(3),
+    &__item:nth-child(4) {
+      border-radius: $borderRadiusBottomDesk;
+      padding-bottom: 20px;
+      padding-top: 25px;
+    }
+
+    &__text {
+      width: 190px;
+      padding-left: 0;
+      margin-bottom: 10px;
+
+    }
+
+    &__number {
+      padding-right: 0;
+      padding-top: 0;
+      margin-left: 0;
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+
+  }
+  .manual:before {
+    display: none;
+  }
+}
+
+//------desktop-version-----
+
+@media (min-width: $desktop-width) {
+  .manual {
+    width: 100%;
+
+    &__list {
+      flex-wrap: nowrap;
+    }
+
+    & &__item {
+      border-radius: $borderRadiusDesk;
+      width: 30%;
+      padding: 30px 0 30px 30px;
+      margin: 0;
+    }
+
+    & &__item:not(:first-child) {
+      margin: 0 0 0 -60px;
+    }
+
+    &__item {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__text {
+      margin: 0 50px 0 0;
+    }
+
+    &__number {
+      font-size: 24px;
+    }
+
+    &__item:last-child &__text {
+      margin-right: 105px;
+    }
+  }
+}

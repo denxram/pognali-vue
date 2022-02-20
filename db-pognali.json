@@ -1,0 +1,258 @@
+{
+    "companions": [
+        {
+            "companionName": "Таня Фирсова",
+            "companionHashtags": "#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи",
+            "companionImage1x": "firsova-desktop@1x.jpg",
+            "companionImage2x": "firsova-desktop@2x.jpg",
+            "companionLevel": 96,
+            "isOnline": false,
+            "transport": [
+                {
+                    "nameTransport": "plane",
+                    "isActive": true
+                },
+                {
+                    "nameTransport": "bus",
+                    "isActive": false
+                },
+                {
+                    "nameTransport": "bike",
+                    "isActive": false
+                },
+                {
+                    "nameTransport": "run",
+                    "isActive": false
+                }
+            ],
+            "flags": [
+                {
+                    "id": "1",
+                    "countryName": "Шри-Ланка",
+                    "flagImg": "sri-lanka.svg"
+                },
+                {
+                    "id": "2",
+                    "countryName": "Тайланд",
+                    "flagImg": "thailand.svg"
+                },
+                {
+                    "id": "3",
+                    "countryName": "Сейшелы",
+                    "flagImg": "seychelles.svg"
+                }
+            ]
+        },
+        {
+            "companionName": "Петя Демин",
+            "companionHashtags": "#бургер #бар #футбол #концерт #крафт",
+            "companionImage1x": "demin-desktop@1x.jpg",
+            "companionImage2x": "demin-desktop@2x.jpg",
+            "companionLevel": 80,
+            "isOnline": true,
+            "transport": [
+                {
+                    "nameTransport": "plane",
+                    "isActive": true
+                },
+                {
+                    "nameTransport": "bus",
+                    "isActive": true
+                },
+                {
+                    "nameTransport": "bike",
+                    "isActive": false
+                },
+                {
+                    "nameTransport": "run",
+                    "isActive": true
+                }
+            ],
+            "flags": [
+                {
+                    "id": "1",
+                    "countryName": "Бельгия",
+                    "flagImg": "belgium.svg"
+                },
+                {
+                    "id": "2",
+                    "countryName": "Чехия",
+                    "flagImg": "czech.svg"
+                }
+            ]
+        },
+        {
+            "companionName": "Марк Смолов",
+            "companionHashtags": "#рэп #тату #хайпбист #сникеры #суприм",
+            "companionImage1x": "smolov-desktop@1x.jpg",
+            "companionImage2x": "smolov-desktop@2x.jpg",
+            "companionLevel": 25,
+            "isOnline": false,
+            "transport": [
+                {
+                    "nameTransport": "plane",
+                    "isActive": true
+                },
+                {
+                    "nameTransport": "bus",
+                    "isActive": false
+                },
+                {
+                    "nameTransport": "bike",
+                    "isActive": true
+                },
+                {
+                    "nameTransport": "run",
+                    "isActive": false
+                }
+            ],
+            "flags": [
+                {
+                    "id": "1",
+                    "countryName": "США",
+                    "flagImg": "usa.svg"
+                },
+                {
+                    "id": "2",
+                    "countryName": "Австралия",
+                    "flagImg": "australia.svg"
+                },
+                {
+                    "id": "3",
+                    "countryName": "Доминика",
+                    "flagImg": "dominica.svg"
+                }
+            ]
+        },
+        {
+            "companionName": "Лариса Роговая",
+            "companionHashtags": "#образование #карьера #учеба #линкедин",
+            "companionImage1x": "rogovaya-desktop@1x.jpg",
+            "companionImage2x": "rogovaya-desktop@2x.jpg",
+            "companionLevel": 50,
+            "isOnline": true,
+            "transport": [
+                {
+                    "nameTransport": "plane",
+                    "isActive": true
+                },
+                {
+                    "nameTransport": "bus",
+                    "isActive": true
+                },
+                {
+                    "nameTransport": "bike",
+                    "isActive": false
+                },
+                {
+                    "nameTransport": "run",
+                    "isActive": false
+                }
+            ],
+            "flags": [
+                {
+                    "id": "1",
+                    "countryName": "Великобритания",
+                    "flagImg": "united-kingdom.svg"
+                },
+                {
+                    "id": "2",
+                    "countryName": "Германия",
+                    "flagImg": "germany.svg"
+                }
+            ]
+        }
+    ],
+    "countries": [
+        {
+            "name": "Таиланд",
+            "countriesImage1x": "thailand-mobile@1x.jpg",
+            "countriesImage2x": "thailand-mobile@2x.jpg",
+            "countriesImageDesktop1x": "thailand-desktop@1x.jpg",
+            "countriesImageDesktop2x": "thailand-desktop@2x.jpg",
+            "text": "Джунгли зовут!",
+            "views": 18321,
+            "flag": "thailand.svg"
+        },
+        {
+            "name": "Франция",
+            "countriesImage1x": "france-mobile@1x.jpg",
+            "countriesImage2x": "france-mobile@2x.jpg",
+            "countriesImageDesktop1x": "france-desktop@1x.jpg",
+            "countriesImageDesktop2x": "france-desktop@2x.jpg",
+            "text": "Трэ бьен, манифик!",
+            "views": 12518,
+            "flag": "france.svg"
+        },
+        {
+            "name": "Чехия",
+            "countriesImage1x": "czech-mobile@1x.jpg",
+            "countriesImage2x": "czech-mobile@2x.jpg",
+            "countriesImageDesktop1x": "czech-desktop@1x.jpg",
+            "countriesImageDesktop2x": "czech-desktop@2x.jpg",
+            "text": "Закоулки старой Европы",
+            "views": 5326,
+            "flag": "czech.svg"
+        },
+        {
+            "name": "Таиланд",
+            "countriesImage1x": "thailand-mobile@1x.jpg",
+            "countriesImage2x": "thailand-mobile@2x.jpg",
+            "countriesImageDesktop1x": "thailand-desktop@1x.jpg",
+            "countriesImageDesktop2x": "thailand-desktop@2x.jpg",
+            "text": "Джунгли зовут!",
+            "views": 10000,
+            "flag": "thailand.svg"
+        },
+        {
+            "name": "Франция",
+            "countriesImage1x": "france-mobile@1x.jpg",
+            "countriesImage2x": "france-mobile@2x.jpg",
+            "countriesImageDesktop1x": "france-desktop@1x.jpg",
+            "countriesImageDesktop2x": "france-desktop@2x.jpg",
+            "text": "Трэ бьен, манифик!",
+            "views": 2000,
+            "flag": "france.svg"
+        },
+        {
+            "name": "Чехия",
+            "countriesImage1x": "czech-mobile@1x.jpg",
+            "countriesImage2x": "czech-mobile@2x.jpg",
+            "countriesImageDesktop1x": "czech-desktop@1x.jpg",
+            "countriesImageDesktop2x": "czech-desktop@2x.jpg",
+            "text": "Закоулки старой Европы",
+            "views": 5000,
+            "flag": "czech.svg"
+        },
+        {
+            "name": "Таиланд",
+            "countriesImage1x": "thailand-mobile@1x.jpg",
+            "countriesImage2x": "thailand-mobile@2x.jpg",
+            "countriesImageDesktop1x": "thailand-desktop@1x.jpg",
+            "countriesImageDesktop2x": "thailand-desktop@2x.jpg",
+            "text": "Джунгли зовут!",
+            "views": 18321,
+            "flag": "thailand.svg"
+        },
+        {
+            "name": "Франция",
+            "countriesImage1x": "france-mobile@1x.jpg",
+            "countriesImage2x": "france-mobile@2x.jpg",
+            "countriesImageDesktop1x": "france-desktop@1x.jpg",
+            "countriesImageDesktop2x": "france-desktop@2x.jpg",
+            "text": "Трэ бьен, манифик!",
+            "views": 12518,
+            "flag": "france.svg"
+        },
+        {
+            "name": "Чехия",
+            "countriesImage1x": "czech-mobile@1x.jpg",
+            "countriesImage2x": "czech-mobile@2x.jpg",
+            "countriesImageDesktop1x": "czech-desktop@1x.jpg",
+            "countriesImageDesktop2x": "czech-desktop@2x.jpg",
+            "text": "Закоулки старой Европы",
+            "views": 5326,
+            "flag": "czech.svg"
+        }
+    ]
+}

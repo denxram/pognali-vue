@@ -1,0 +1,50 @@
+.v-button{
+  width: 100%;
+  display: flex;
+  padding: 23px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: $borderRadius;
+  background: $primaryYellow;
+  color: $btnColor;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  transition: $transition;
+  &:hover {
+    background: $orange-2;
+    transition: $transition;
+  }
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
+  &:active &__icon {
+    opacity: 0.3;
+    transition: $transition;
+  }
+
+  &__text {
+    text-align: left;
+    margin-right: 10px;
+  }
+
+  &__icon {
+    min-width: 10px;
+    height: 14px;
+    fill: $btnColor;
+    align-self: center;
+  }
+
+}
+
+//------tablet-version------
+
+@media (min-width:  $tablet-width) {
+  .v-button{
+    font-size: 24px;
+    line-height: 24px;
+    padding: 30px 35px 30px 30px;
+    border-radius: $borderRadiusDesk;
+  }
+}
+

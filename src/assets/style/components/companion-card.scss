@@ -1,0 +1,201 @@
+.companion-card {
+
+  &__item {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-radius: $borderRadius;
+    background: $white;
+    transition: all 0.2s ease;
+    z-index: 1;
+  }
+
+  &__image-grid {
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+    border-radius: $borderRadius;
+  }
+
+  &__item:hover {
+    box-shadow: 0 6px 21px 0 rgba(0,0,0,0.07);
+    transition: all 0.2s ease;
+  }
+
+  &__image {
+    border-radius: $borderRadiusTop;
+    transition: all 0.2s ease;
+  }
+
+  &__item:hover &__image {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+  }
+
+  &__status-bar {
+    position: absolute;
+    left: 17px;
+    top: 13px;
+  }
+
+  &__flag-list {
+    min-height: 34px;
+    margin-top: -12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 20px;
+  }
+
+  &__flag-item {
+    position: relative;
+    margin-right: 19px;
+    margin-bottom: 10px;
+  }
+
+  &__country-name {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    left: 40%;
+    transform: translate(-50%, 0);
+    padding: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $white;
+    background-color: $tooltipBG;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  &__country-name:after {
+    content: '';
+    position: absolute;
+    left: 45%;
+    top: -19px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid $tooltipBG;
+  }
+
+  &__flag-item:hover &__country-name {
+    visibility: visible;
+  }
+
+  &__companion-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      opacity: 0.7;
+      transition: all 0.2s ease;
+    }
+
+    &:active {
+      opacity: 0.3;
+      transition: all 0.2s ease;
+    }
+  }
+
+  &__companion-name {
+    max-width: 75%;
+    text-align: center;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    color: $btnColor;
+    word-wrap: break-word;
+  }
+
+  &__offline {
+    display: block;
+    margin-right: 11px;
+    width: 5px;
+    height: 5px;
+    background-color: $offlineColor;
+    border-radius: 2.5px;
+  }
+
+  &__online {
+    background-color: $onlineColor;
+  }
+
+
+  &__companion-hashtags {
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 17px;
+    line-height: 18px;
+  }
+}
+
+//------tablet-version------
+
+@media (min-width:  $tablet-width) {
+  .companion-card {
+    &__item {
+      width: 285px;
+      border-radius: $borderRadiusDesk;
+    }
+
+    &__image {
+      width: 285px;
+      height: 285px;
+      border-radius: $borderRadiusTopDesk;
+    }
+
+    &__image-grid {
+      height: 285px;
+    }
+
+    &__status-bar {
+      top: 25px;
+    }
+
+    &__flag-list {
+      margin-top: -50px;
+    }
+
+    &__companion-link {
+      margin-bottom: 25px;
+    }
+
+    &__companion-name {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &__offline {
+      height: 7px;
+      width: 7px;
+    }
+
+    &__companion-hashtags {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__companion-info {
+      padding-top: 40px;
+    }
+  }
+}
+
+//------desktop-version-----
+
+@media (min-width: $desktop-width) {
+  .companion-card {
+
+  }
+}

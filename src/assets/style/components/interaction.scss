@@ -1,0 +1,96 @@
+.interaction {
+  display: flex;
+  align-items: center;
+
+  &__auth-btn {
+    width: 100%;
+    padding: 5px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $primaryDarkblue;
+    background-color: $primaryYellow;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: $orange-2;
+      transition: all 0.2s ease;
+    }
+
+    &:active {
+      color: rgba(22, 28, 53, 0.3);
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  &__icon-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $primaryOrange;
+    border-radius: 50%;
+    padding: 11px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: $contactPhoneHov;
+      transition: all 0.2s ease;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
+  }
+
+  &__icon-bg--mail {
+    background-color: $orange-2;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: $primaryOrange;
+    }
+  }
+}
+
+//----tablet-version-----
+
+@media (min-width: $tablet-width) {
+
+  .interaction {
+    &__contacts {
+      display: none;
+    }
+
+    &__auth-btn {
+      font-size: 20px;
+      line-height: 30px;
+      border-radius: 25px;
+      padding: 10px 30px;
+    }
+  }
+}
+
+//------desktop-version-----
+
+@media (min-width: $desktop-width) {
+  .interaction {
+    &__icon-bg {
+      width: 50px;
+      height: 50px;
+    }
+
+    &__contacts {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.service {
+  margin-top: -2px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  position: relative;
+  width: 100%;
+  background: url("../img/about-mobile@1x.png") no-repeat 50% -13% $primaryDarkblue;
+  border-radius: $radiusSectionBottom;
+  z-index: 10;
+
+  &__grid-text {
+    width: 87%;
+    color: $white;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    display: none;
+  }
+}
+
+//------tablet-version------
+
+@media (min-width: $tablet-width) {
+  .service {
+    padding-bottom: 85px;
+    background: $primaryDarkblue;
+    border-radius: $radiusSectionBottomDesc;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 90%;
+      height: 213px;
+      background: #141b3b;
+      top: 0;
+      left: 5%;
+      border-radius: $borderRadiusDesk;
+      z-index: -1;
+    }
+
+    &__inner {
+      background: url("../img/about-tablet@1x.png") no-repeat 98% 100% transparent;
+    }
+
+    &__grid-text {
+      width: 52%;
+      padding-left: 35px;
+    }
+
+    &__title {
+      margin-bottom: 45px;;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__text:last-of-type {
+      margin-bottom: 50px;
+    }
+
+    &__link {
+      display: flex;
+      width: 275px;
+    }
+  }
+}
+
+//------desktop-version-----
+
+@media (min-width: $desktop-width) {
+  .service {
+    padding-top: 130px;
+    padding-bottom: 168px;
+    background: url("../img/about-desktop@1x.png") no-repeat 93% 86px $primaryDarkblue;
+    &:before {
+      width: 15%;
+      height: 213px;
+      top: 70px;
+      left: 60px;
+    }
+
+    &__inner {
+      background: transparent;
+    }
+
+    &__grid-text {
+      padding-left: 75px;
+    }
+
+    &__title {
+      margin-bottom: 60px;
+    }
+
+    &__text:last-of-type {
+      padding-right: 150px;
+      margin-bottom: 85px;
+    }
+  }
+
+}

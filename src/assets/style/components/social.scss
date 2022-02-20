@@ -1,0 +1,37 @@
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    &__item {
+        margin-right: 12px;
+        margin-left: 16px;
+    }
+
+    &__icon {
+        fill: $primaryDarkblue;
+        transition: $transition;
+
+        &:hover {
+            opacity: 0.6;
+            transition: $transition;
+        }
+
+        &:active {
+            opacity: 0.3;
+            transition: $transition;
+        }
+    }
+}
+
+//------tablet-version-----
+
+@media (min-width:  $tablet-width) {
+    .social {
+        &__icon {
+            width: 31px;
+            height: 28px;
+        }
+    }
+}

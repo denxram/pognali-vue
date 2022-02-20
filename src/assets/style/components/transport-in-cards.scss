@@ -1,0 +1,60 @@
+.transport {
+  display: flex;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__item &__indicator{
+    opacity: 0.14;
+  }
+
+  &__item, {
+    position: relative;
+  }
+
+  &__item--active &__indicator {
+    opacity: 1;
+    fill: $btnColor;
+  }
+
+  &__tooltip {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    left: 35%;
+    transform: translate(-50%, 0);
+    padding: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $white;
+    background-color: $tooltipBG;
+    border-radius: 4px;
+    z-index: 50;
+  }
+
+  &__tooltip:after {
+      content: '';
+      position: absolute;
+      left: 45%;
+      top: -19px;
+      border: 10px solid transparent;
+      border-bottom: 10px solid $tooltipBG;
+  }
+
+  &__item:hover &__tooltip {
+    visibility: visible;
+  }
+}
+
+//------tablet-version------
+
+@media (min-width:  $tablet-width) {
+  .transport {
+
+  }
+}
+

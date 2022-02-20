@@ -1,0 +1,192 @@
+.header {
+  position: relative;
+  width: 100%;
+  background: $secondaryDarkblue;
+  text-transform: uppercase;
+  transition: all .5s ease;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: $white;
+    z-index: 200;
+    transition: all 0.5s ease;
+
+  }
+
+  &__scroll + .page-main {
+    padding-top: 74px;
+  }
+
+  &__scroll .menu-header__logo-scroll {
+    display: block;
+  }
+
+  &__scroll .menu-header__logo {
+    display: none;
+  }
+
+  & .menu-header__interaction {
+    display: none;
+  }
+
+  & .menu-header__site-list {
+    display: none;
+  }
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: inherit;
+    transition: all 0.2s ease;
+  }
+
+  &__icon {
+    fill: $white;
+    transition: all 0.2s ease;
+  }
+
+  &--open {
+    padding-bottom: 67px;
+  }
+
+  &--open &__icon,
+  .header__scroll {
+    fill: $secondaryDarkblue;
+  }
+
+  &__logo-scroll {
+    display: none;
+  }
+}
+
+.header__scroll .menu-header {
+  padding-bottom: 27px;
+}
+
+.header__scroll .menu-header__icon {
+  fill: #cccccc;
+}
+
+//------tablet-version-----
+
+@media (min-width: $tablet-width) {
+  .header {
+    background: $darkblueTablet;
+
+    &__scroll + .page-main {
+      padding-top: 150px;
+    }
+
+    &__scroll {
+      background: $white;
+    }
+
+    &__scroll .menu-header {
+      padding-bottom: 40px;
+    }
+
+    .menu-header__interaction {
+      display: flex;
+    }
+  }
+
+  .menu-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__logo,
+    &__logo-scroll {
+      width: 166px;
+      height: 42px;
+    }
+
+    &__logo-link {
+      margin-top: 5px;
+      margin-right: 23px;
+    }
+  }
+}
+
+//------desktop-version-----
+
+@media (min-width: $desktop-width) {
+  .header {
+    background: $secondaryDarkblue;
+
+    &__scroll {
+      background: $white;
+    }
+
+    &__scroll + .page-main {
+      padding-top: 117px;
+    }
+
+    &__scroll .menu-header {
+      padding-bottom: 20px;
+    }
+
+    &__scroll .menu-header__site-list a {
+      color: $primaryDarkblue;
+    }
+
+    &__scroll .menu-header__site-list {
+      position: relative;
+    }
+
+    &__scroll .menu-header__site-list:before {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background-color: $primaryDarkblue;
+      border-radius: 1px;
+      top: 15px;
+      left: -105px;
+    }
+
+  }
+  .menu-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: flex-start;
+
+    &__logo-link {
+      margin-right: 85px;
+    }
+
+    &__logo,
+    &__logo-scroll {
+      width: 200px;
+      height: 52px;
+    }
+
+    &__btn {
+      display: none;
+    }
+
+    & .menu-header__site-list {
+      display: flex;
+      margin-top: 15px;
+      position: relative;
+
+    }
+
+    &__interaction {
+      margin-left: auto;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.status-bar {
+  font-weight: 700;
+  color: $white;
+  font-size: 24px;
+  &__text {
+    position: relative;
+    margin-top: 4px;
+    color: $white;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+  }
+  &__text:before{
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    width: 31px;
+    height: 1px;
+    content: "";
+    opacity: 0.3;
+    background-color: $white;
+  }
+
+}

@@ -1,0 +1,90 @@
+.popup-business-rates {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow-y: auto;
+  overflow-x: hidden;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    min-height: 443px;
+    width: 270px;
+    margin: 90px auto;
+    box-shadow: 0 20px 50px 0 rgba(29,46,91,0.1);
+    background: $white;
+    border-radius: 20px;
+  }
+
+  &__inner {
+    border-radius: $borderRadiusTopDesk;
+    padding: 30px 25px;
+    background: $white;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__price-item:first-child {
+    border-top: 1px solid rgba(0, 0, 0, .05);
+  }
+
+  &__price-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    line-height: 22px;
+    color: $primaryGray;
+  }
+
+  &__popup-close {
+    margin-top: auto;
+    padding: 23px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $btnColor;
+    background: $popupBtnBGR;
+    border-radius: $borderRadiusBottomDesk;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+//------tablet-version------
+
+@media (min-width:  $tablet-width) {
+  .popup-business-rates {
+    &__container {
+      width: 688px;
+      min-height: 530px;
+      margin: 150px auto;
+    }
+
+    &__inner {
+      padding: 50px 90px;
+      border-radius: $radiusSection;
+    }
+
+    &__price-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: 300;
+    }
+
+    &__popup-close {
+      font-size: 24px;
+      text-transform: none;
+      padding: 44px;
+    }
+  }
+}

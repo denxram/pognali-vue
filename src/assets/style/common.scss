@@ -1,0 +1,39 @@
+@import "./Base/fonts.scss";
+@import "./variables.scss";
+@import "./Base/mixin.scss";
+@import "./colors.scss";
+
+@import "./Base/base.scss";
+
+// components
+@import "./components/contacts.scss";
+@import "./components/header.scss";
+@import "./components/interaction.scss";
+@import "./components/social.scss";
+@import "./components/countries-card.scss";
+@import "./components/v-button.scss";
+@import "./components/companion-card.scss";
+@import "./components/traveler-status-bar.scss";
+@import "./components/transport-in-cards.scss";
+@import "./components/popup-business-rates.scss";
+@import "./components/map.scss";
+@import "./components/footer.scss";
+@import "./components/hidden-menu.scss";
+@import "./components/site-list.scss";
+@import "./components/v-load-mode-btn.scss";
+@import "./components/v-load-mode-btn-hide.scss";
+
+// ----Pages----
+
+// Home
+@import "./Home/page-main.scss";
+@import "./Home/intro.scss";
+@import "./Home/manual.scss";
+@import "./Home/service.scss";
+@import "./Home/countries.scss";
+@import "./Home/companion.scss";
+@import "./Home/rates.scss";
+@import "./Home/cta.scss";
+@import "Home/address.scss";
+
+

@@ -1,0 +1,48 @@
+.load-more {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  transition: $transition;
+  background-color: inherit;
+
+  &:hover {
+    opacity: 0.6;
+    transition: $transition;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: $transition;
+  }
+
+  &__text {
+    margin-right: 10px;
+    font-weight: 700;
+    line-height: 16px;
+    font-size: 16px;
+    color: $btnColor;
+  }
+
+  &__icon {
+    fill: $btnColor;
+  }
+}
+
+//------tablet-version------
+
+@media (min-width: $tablet-width) {
+  .load-more {
+    align-items: end;
+    &__text {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__icon {
+      width: 14px;
+      height: 14px;
+      margin-bottom: 1px;
+    }
+  }
+}

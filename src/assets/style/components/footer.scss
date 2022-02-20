@@ -1,0 +1,140 @@
+.footer {
+  position: relative;
+  margin-top: -45px;
+  border-radius: $radiusSectionTop;
+  z-index: 5;
+  background: $white;
+  padding-top: 35px;
+
+
+  &__logo {
+    display: block;
+    margin: 0 auto 40px;
+  }
+
+  &__social {
+    margin-bottom: 35px;
+  }
+
+  &__social .social__item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &__social .social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $primaryYellow;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: $transition;
+  }
+
+  &__social .social__link:hover {
+    background: $orange-2;
+    transition: $transition;
+  }
+
+  &__social .social__link:hover .social__icon {
+    opacity: 1;
+  }
+
+  &__social .social__link:active .social__icon {
+    opacity: 0.3;
+  }
+
+  &__copyright {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+    transition: $transition;
+
+    &:hover {
+      opacity: 0.6;
+      transition: $transition;
+    }
+
+    &:active {
+      opacity: 0.3;
+      transition: $transition;
+    }
+  }
+
+
+  &__copyright-text {
+    line-height: 22px;
+    font-weight: 400;
+    color: $primaryGray;
+  }
+
+  &__copyright-logo {
+    padding-top: 6px;
+    fill: $primaryDarkblue;
+
+  }
+}
+
+//------tablet-version------
+
+@media (min-width: $tablet-width) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-radius: $radiusSectionTopDesc;
+
+    &__logo {
+      margin: 0;
+    }
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__social {
+      margin: 0;
+    }
+
+    &__social .social__link {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__copyright {
+      margin-left: 10px;
+      padding: 0;
+      align-items: center;
+      border-top: none;
+    }
+
+    &__copyright-text {
+      margin-right: 25px;
+      font-size: 20px;
+      line-height: 20px;
+
+    }
+
+    &__copyright-logo {
+
+      width: 27px;
+      height: 34px;
+    }
+  }
+}
+
+//------desktop-version-----
+
+@media (min-width: $desktop-width) {
+  .footer {
+    &__social {
+      margin-right: 35px;
+    }
+  }
+
+}

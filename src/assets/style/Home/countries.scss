@@ -1,0 +1,140 @@
+.countries {
+  position: relative;
+  z-index: 9;
+  margin-top: -30px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  border-radius: 0 0 30px 30px;
+  background-color: $secondaryGray;
+
+  &__grid-text {
+    width: 82%;
+    margin-bottom: 65px;
+    line-height: 22px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    color: $primaryGray;
+  }
+
+  &__list {
+    margin-bottom: 25px;
+    transition: all 1s ease;
+  }
+
+  &__item {
+    transition: all 1s ease;
+  }
+
+  &__buttons-grid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+
+//------tablet-version------
+
+@media (min-width: $tablet-width) {
+  .countries {
+    background: url("../img/flags-back@1x.png") no-repeat 91% 27% $secondaryGray;
+    margin-top: -60px;
+    padding-top: 125px;
+    padding-bottom: 80px;
+    border-radius: $radiusSectionBottomDesc;
+
+    &__inner {
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+
+    &__title {
+      margin-bottom: 60px;
+    }
+
+    &__grid-text {
+      position: relative;
+      width: 56%;
+      margin-bottom: 110px;
+    }
+
+    &__list {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 40px;
+
+      &:before {
+        position: absolute;
+        content: "";
+        width: 141px;
+        height: 141px;
+        top: -42px;
+        left: -35px;
+        background: #e2e5f2;
+        border-radius: $borderRadiusDesk;
+        z-index: -1;
+      }
+    }
+
+  }
+}
+
+//------desktop-version-----
+
+@media (min-width: $desktop-width) {
+  .countries {
+    padding-top: 220px;
+    padding-bottom: 60px;
+    background-position: 95% 64%;
+
+    &__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr auto auto;
+    }
+
+    &__grid-text {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      width: 100%;
+      padding-left: 140px;
+      padding-right: 165px;
+      margin-bottom: 0;
+    }
+
+    &__text {
+      margin-bottom: 60px;
+    }
+
+    &__list {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      padding-left: 55px;
+      padding-right: 30px;
+      margin-bottom: 60px;
+      &:before {
+        top: -70px;
+        left: -15px;
+      }
+    }
+
+    &__button {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      justify-self: center;
+      width: 42%;
+      margin-right: 80px;
+    }
+
+    &__buttons-grid {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+  }
+}
+

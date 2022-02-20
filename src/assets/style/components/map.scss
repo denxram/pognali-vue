@@ -1,0 +1,24 @@
+.map-box {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  margin-top: -30px;
+  z-index: 4;
+}
+
+//------tablet-version------
+
+@media (min-width: $tablet-width) {
+  .map-box {
+    margin-top: -60px;
+    height: 546px;
+  }
+}
+
+//------desktop-version-----
+
+@media (min-width: $desktop-width) {
+  .map-box {
+    height: 500px;
+  }
+}

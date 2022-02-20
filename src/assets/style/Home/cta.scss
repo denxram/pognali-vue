@@ -1,0 +1,215 @@
+.cta {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  margin-top: -30px;
+  background: $primaryDarkblue;
+  border-radius: $radiusSectionBottom;
+  z-index: 6;
+
+  &__inner {
+    color: $white;
+  }
+
+  &__title {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__text:first-of-type {
+    margin-bottom: 0;
+  }
+
+  &__text-link {
+    text-decoration: underline;
+    color: $primaryYellow;
+    transition: $transition;
+
+    &:hover {
+      text-decoration: underline;
+      color: $primaryOrange;
+      transition: $transition;
+    }
+
+    &:active {
+      opacity: 0.3;
+      transition: $transition;
+    }
+  }
+
+  &__form {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    width: 85%;
+    padding: 20px 20px 20px 24px;
+    border-radius: $borderRadius;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    transition: $transition;
+
+    &:focus {
+      background: $primaryDarkblue;
+      color: $white;
+      transition: $transition;
+      border: 4px solid $white;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+
+  &__input::placeholder {
+    color: $primaryGray;
+    opacity: 0.3;
+    transition: $transition;
+  }
+
+  &__input:hover::placeholder {
+    opacity: 0.5;
+    transition: $transition;
+  }
+
+  &__submit-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 63px;
+
+    & .v-button__icon {
+      margin-left: 5px;
+    }
+  }
+
+  &__submit-btn-text {
+    display: none;
+  }
+
+  &__text:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  &__contacts .contacts__text {
+    color: $primaryYellow;
+  }
+}
+
+//------tablet-version------
+
+@media (min-width: $tablet-width) {
+  .cta {
+    padding-top: 135px;
+    padding-bottom: 60px;
+    margin-top: -60px;
+    border-radius: $radiusSectionBottomDesc;
+
+    &__inner {
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+
+    &__title {
+      margin-bottom: 55px;
+    }
+
+    &__text {
+      width: 100%;
+      margin-bottom: 70px;
+    }
+
+    &__text:last-of-type {
+      margin-bottom: 40px;
+    }
+
+    &__text-br {
+      display: none;
+    }
+
+    &__form {
+      margin-bottom: 60px;
+    }
+
+    &__input {
+      width: 536px;
+      padding: 22px 21px 25px 33px;
+      border-radius: 20px 0 0 20px;;
+      font-size: 24px;
+      line-height: 24px;
+
+      &:focus {
+        padding-top: 18px;
+        padding-bottom: 21px;
+      }
+    }
+
+    &__submit-btn {
+      width: 82px;
+      height: 77px;
+      border-radius: 0 20px 20px 0;
+    }
+
+  }
+}
+
+//------desktop-version-----
+
+@media (min-width: $desktop-width) {
+  .cta {
+    padding-top: 165px;
+    padding-bottom: 100px;
+
+    &__inner {
+      padding-left: 130px;
+      padding-right: 130px;
+    }
+
+    &__text {
+      margin-bottom: 60px;
+    }
+
+    &__input {
+      width: 856px;
+      padding-top: 27px;
+      padding-bottom: 28px;
+      margin-bottom: 5px;
+
+      &:focus {
+        padding-top: 23px;
+        padding-bottom: 23px;
+      }
+    }
+
+    &__submit-btn {
+      width: 324px;
+      height: 77px;
+      border-radius: 0 20px 20px 0;
+      padding-top: 41px;
+      padding-bottom: 44px;
+
+    }
+
+    &__submit-btn-text {
+      display: inline-block;
+    }
+
+    &__text:last-of-type {
+      letter-spacing: 0.5px;
+      margin-bottom: 45px;
+    }
+
+    &__contacts {
+      padding-left: 155px;
+    }
+  }
+
+}
