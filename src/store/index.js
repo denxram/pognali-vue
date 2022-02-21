@@ -17,7 +17,7 @@ export default createStore({
   actions: {
     async getCompanions ({ commit }) {
       try {
-        const companions = await axios('http://localhost:3001/companions', {
+        const companions = await axios('https://pognali-bcee1-default-rtdb.europe-west1.firebasedatabase.app/companions.json', {
           method: 'GET'
         })
         commit('COMPANIONS_STATE', companions.data)
@@ -27,7 +27,7 @@ export default createStore({
     },
     async getCountries ({ commit }) {
       try {
-        const countries = await axios('http://localhost:3001/countries', {
+        const countries = await axios('https://pognali-bcee1-default-rtdb.europe-west1.firebasedatabase.app/countries.json', {
           method: 'GET'
         })
         commit('COUNTRIES_STATE', countries.data)
