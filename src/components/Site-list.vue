@@ -21,7 +21,7 @@ export default {
       {
         pageTitleAnimation: '"О сервисе"',
         pageTitle: 'О сервисе',
-        pageLink: '/about'
+        pageLink: '#'
       },
       {
         pageTitleAnimation: '"Направления"',

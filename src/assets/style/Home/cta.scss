@@ -78,6 +78,11 @@
     transition: $transition;
   }
 
+  &__input--error::placeholder {
+    color: #ff0000;
+    opacity: 1;
+  }
+
   &__input:hover::placeholder {
     opacity: 0.5;
     transition: $transition;

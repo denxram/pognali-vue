@@ -1,14 +1,16 @@
 <template>
   <div class="countries-card__item">
     <a href="#" class="countries-card__link">
-      <picture>
-        <source media="(min-width: 768px)" :srcset=" require('../assets/img/' + country_data.countriesImageDesktop1x) + ' 1x, ' +
+      <div class="countries-card__img-grid">
+        <picture class="countries-card__img-picture">
+          <source media="(min-width: 768px)" :srcset=" require('../assets/img/' + country_data.countriesImageDesktop1x) + ' 1x, ' +
                                                      require('../assets/img/' + country_data.countriesImageDesktop2x) + ' 2x' ">
-        <img class="countries-card__image"
-        :src=" require('../assets/img/' + country_data.countriesImage1x) "
-        :srcset=" require('../assets/img/' + country_data.countriesImage2x) "
-             :alt=" country_data.name ">
-      </picture>
+          <img class="countries-card__image"
+          :src=" require('../assets/img/' + country_data.countriesImage1x) "
+          :srcset=" require('../assets/img/' + country_data.countriesImage2x) "
+               :alt=" country_data.name ">
+        </picture>
+      </div>
       <div class="countries-card__info">
         <picture>
           <img class="countries-card__flag" width="35" height="24"

@@ -5,9 +5,14 @@
       <p class="cta__text text-section">Зарегистрируйтесь,<br class="cta__text-br">
         это быстро и бесплатно!</p>
       <p class="cta__text text-section">Уже зарегистрированы? Тогда скорее <a href="#" class="cta__text-link">авторизуйтесь</a>.</p>
-      <form class="cta__form">
-        <input class="cta__input" type="email" placeholder="E-mail">
-        <button @click.prevent class="cta__submit-btn v-button" type="submit">
+      <form class="cta__form"
+            @submit.prevent="someAction">
+        <input class="cta__input"
+               type="email"
+               :placeholder="placeholderText"
+               v-model="email"
+               :class="{ 'cta__input--error': isEmailError }">
+        <button class="cta__submit-btn v-button" type="submit">
           <span class="cta__submit-btn-text">Регистрация</span>
           <svg class="v-button__icon" width="10" height="14">
             <use xlink:href="@/assets/img/sprite.svg#triangle-arrow-right"></use>
@@ -26,10 +31,23 @@
 import Contacts from '@/components/Contacts'
 export default {
   name: 'cta',
-  components: { Contacts }
+  components: {
+    Contacts
+  },
+  data () {
+    return {
+      placeholderText: 'E-mail',
+      email: '',
+      isEmailError: false
+    }
+  },
+  methods: {
+    someAction () {
+      if (this.email === '') {
+        this.placeholderText = 'Введите e-mail'
+        this.isEmailError = true
+      }
+    }
+  }
 }
 </script>
-
-<style scoped>
-
-</style>
